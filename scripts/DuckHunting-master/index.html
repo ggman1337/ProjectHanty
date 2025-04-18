@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Зимняя охота на уток</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+<script src="lib/jquery.spritely.js"></script>
+<script src="lib/jquery.color.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="game.js"></script>
+<script src="duck.js"></script>
+<script src="levels.js"></script>
+
+</head>
+<body>
+<div id="gameField" class="gameField">
+
+
+    <div id="game" class="game">
+        <div id="tree1" class="treeleft"></div>
+        <div id="tree2" class="treeright"></div>
+        <div id="backdround" class="background"></div>
+    </div>
+    <div class="gameinfo ammo" id="ammo"></div>
+    <div class="gameinfo waves" id="rounds"></div>
+    <div class="gameinfo scoreboard" id="scoreboard"></div>
+
+    <div id="loser" class="messages loser">
+    Вы проиграли!
+    <br/><br/>
+    <div class="tryAgain">Попробовать снова</div>
+    </div>
+
+    <div id="winner" class="messages winner">
+    Поздравляем! Вы стали новым чемпионом!  
+    </div>
+
+    <div id="level" class="messages level">
+    Уровень 1
+    </div>
+
+</div>
+
+
+<div id="info"></div>
+
+<audio class="sounds" id="gunSound1" preload="auto">
+    <source type="audio/mp3" src="sounds/gunSound1.mp3"/>
+</audio>
+<audio class="sounds" id="gunSound2" preload="auto">
+    <source type="audio/mp3" src="sounds/gunSound1.mp3"/>
+</audio>
+<audio class="sounds" id="gunSound3" preload="auto">
+    <source type="audio/mp3" src="sounds/gunSound1.mp3"/>
+</audio>
+<audio class="sounds" id="gunSound4" preload="auto">
+    <source type="audio/mp3" src="sounds/gunSound1.mp3"/>
+</audio>
+
+<audio class="sounds" id="quak" preload="auto">
+    <source type="audio/mp3" src="sounds/quak.mp3"/>
+</audio>
+
+<script type="text/javascript">
+    $(function() {
+
+        $(document).on('click','.tryAgain',function(){
+           game.retry();
+        });
+
+        $(document).ready(function(){
+            game.init();
+            game.loadLevel(levels[0]);
+        });
+
+    });
+</script>
+</body>
+</html>

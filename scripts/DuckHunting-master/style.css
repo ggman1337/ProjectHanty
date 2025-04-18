@@ -1,0 +1,159 @@
+.header{
+	width:900px;
+	margin:0 auto;
+	text-align:center;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
+.duckA{
+	background:url(images/theDuck.png) 0px 0px no-repeat;
+	width:76px;
+	height:73px;	
+	position:absolute;
+	top:600px;
+	right:150px;
+	z-index: 5;
+}
+.duckB{
+	background:url(images/theOtherDuck.png) 0px 0px no-repeat;
+	width:76px;
+	height:73px;	
+	position:absolute;
+	top:600px;
+	left:70px;
+	z-index: 5;
+}
+.ducks{
+	width:76px;
+	height:73px;	
+}
+.gameField{
+	width:1100px;
+	height:800px;
+	position:relative;
+	margin:0 auto;
+	border:solid;
+	cursor:url(images/ch3.gif), auto;
+	overflow:hidden;
+}
+.game{
+	width:1100px;
+	height:800px;
+	position:relative;
+    margin:0 auto;
+}
+.background{
+	position:absolute;
+	background:url(images/back.jpg) bottom left no-repeat;
+	background-size: 100% 100%;
+	width:1100px;
+	height:800px;
+	bottom:0px;
+	z-index:0;
+}
+.treeright{
+	position:absolute;
+	background:url(images/tree4.png) top left no-repeat;
+	background-size: 100% 100%;
+	right:80px;
+	bottom:0px;	
+	width:300px;
+	height:390px;
+	z-index:6;
+}
+
+.treeleft {	
+	position:absolute;
+	background:url(images/tree4.png) top left no-repeat;
+	background-size: 100% 100%;
+	left:20px;
+	bottom:10px;	
+	width:260px;
+	height:360px;
+	z-index:6;
+}
+.fence {
+	position:absolute;
+	background:url(images/fence.png) top left no-repeat;
+	background-size: 100% 100%;
+	left:100px;
+	bottom:50px;	
+	width:150px;
+	height:50px;
+	z-index:7;
+}
+.theDog{
+	width:138px;
+	height:113px;
+	background:url(images/dog.png) 0 0 no-repeat;
+	position:absolute;
+	bottom:-10px;
+	left:350px;
+	z-index:2;
+}
+.searchDog{
+	width:124px;
+	height:130px;
+	background:url(images/dogSniffJump.png) 0 0 no-repeat;
+	position:absolute;
+	bottom:4px;
+	left:-100px;
+	z-index:5;
+}
+.loser,.winner,.level{
+	text-align:center;
+	font-family: Comic Sans MS;
+	font-weight:bold;
+	width:500px;
+	color:#ffffff;
+	font-size:24px;
+	position:absolute;
+	top:200px;
+	left:300px;
+	display:none;
+}
+.tryAgain{
+	font-family: Comic Sans MS;
+	font-size:20px;
+	color:#ffffff;
+	border:solid;
+	padding:7px;
+	width:100px;	
+	margin:0 auto;
+	text-align:center;
+	cursor:pointer;
+}
+.scoreboard{
+	background-color: rgba(230,245,255,0.8);
+	font-family: Comic Sans MS;
+	font-weight:bold;
+	font-size:16px;
+	color: #003366;	
+	position:absolute;
+	border: groove #81d4fa 2px;
+	left:10px;
+	top:3px;
+}
+.ammo{
+	background-color: rgba(230,245,255,0.8);
+	font-family: Comic Sans MS;
+	font-weight:bold;
+	font-size:16px;	
+	color: #003366;	
+	position:absolute;
+	border: groove #81d4fa 2px;
+	top:30px;
+	left:10px;
+}
+.waves{
+	background-color: rgba(230,245,255,0.8);
+	font-family: Comic Sans MS;
+	font-weight:bold;
+	font-size:16px;
+	color: #003366;	
+	position:absolute;
+	border: groove #81d4fa 2px;
+	top: 57px;
+	left:10px;
+	z-index:7;
+}

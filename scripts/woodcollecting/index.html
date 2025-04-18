@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сбор хвороста</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <img src="images/bg.png" class="background" alt="Лес">
+        <div id="log-area"></div>
+        <div class="hud">
+            Счёт: <span id="score">0</span> | Время: <span id="timer">45</span>с
+        </div>
+    </div>
+    <div class="controls text-center my-3">
+        <button id="start-btn">Начать игру</button>
+    </div>
+    <audio id="bg-audio" src="../../assets/audio/bg_music_games.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
