@@ -455,7 +455,7 @@ tw-link { color: #8B4513; border-bottom: 1px dashed #DEB887; }
 :: Миниигра_охота
 <<set $huntSkill=true>>
 <div class="game-container">
-<iframe src="../scripts/DuckHunting-master/index.html"></iframe>
+<iframe src="../scripts/Duckhunting/index.html"></iframe>
 </div>
 [[Финал|Финал]]
 
